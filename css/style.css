@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eec373;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* Header and nav bar */
+.nav-list {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item,
+.nav-toggle {
+  list-style: none;
+  margin: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-main {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+/* Coffee image and text */
+
+.coffee-wrapper {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.coffee {
+  max-width: clamp(25%, 50%, 75%);
+  border-radius: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coffee-text h1 {
+  text-align: center;
+  color: #876445;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.coffee-text p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+@media all and (max-width: 768px) {
+  .coffee-wrapper {
+      display: block;
+  }
+
+  .coffee{
+      display:grid;
+      place-items: center;
+      margin-top:3rem;
+  }
+}
+/* Syed's Introduction */
+.macbook-wrapper {
+  text-align: center;
+  background-color: #f4dfba;
+  padding: 1rem;
+  min-height: 15rem;
+  line-height: 2;
+}
+
+.macbook-wrapper h1{
+    font-size:3rem;
+    font-weight: 700;
+}
+.macbook-wrapper p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media all and (max-width: 768px){
+    .macbook-wrapper h1{
+      line-height: 1;
+      margin-bottom:1rem;
+    }
+}
+
+/* Your portfolio here */
+.middle-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1rem;
+    margin:2rem;
+}
+
+.skill-row {
+    border: 1px solid #876445;
+    min-height:20rem;
+}
+
+button {
+    display:block;
+    font-family: "Oxygen", sans-serif;
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
+    background-color: #876445;
+    color: #fff;
+  }
+  
+  button:hover {
+    font-family: "Oxygen", sans-serif;
+    background-color: #f4dfba;
+    color: #000;
+  }
+
+
+.bottom-container {
+  background-color: #876445;
+}
+
+.contact-me {
+  background-color: #f4dfba;
+  font-family: "Oxygen", sans-serif;
+  line-height: 2;
+  display: grid;
+  place-items: center;
+  gap:1rem;
+}
+
+.contact-me h3 {
+  color: #876445;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-me p {
+  font-size: 1rem;
+}
+
+.contact-me a{
+  text-decoration: none;
+}
+
+
+.bottom-container {
+  font-family: "Oxygen", sans-serif;
+  color: #f4dfba;
+}
+
